@@ -2,7 +2,7 @@ terraform {
   required_providers {
     google = {
       source = "hashicorp/google"
-      version = "~> 1.6.0"
+      version = "~> 6.0"
     }
   }
 }
@@ -11,7 +11,7 @@ provider "google" {
   project = var.project_id
   region = var.region
   zone = var.zone
-  credentials = file("~/minecraft-sa-key.json")
+  credentials = file("/Users/bevangelista/Desktop/Work/Projects/Minecraft_Server_GCP/resources/minecraft-sa-key.json")
 }
 
 
